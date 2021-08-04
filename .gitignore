@@ -1,0 +1,53 @@
+#####################
+# Build folders
+#
+
+build/
+Builds/
+
+
+####################
+# Android
+#
+
+*.apk
+*.ap_
+*.dex
+*.class
+.gradle/
+local.properties
+proguard/
+*.log
+.navigation/
+captures/
+.externalNativeBuild
+.cxx
+google-services.json
+
+
+####################
+# JetBrains
+#
+
+.idea
+*.iws
+.idea_modules/
+
+
+####################
+# VSCode
+#
+
+.vscode
+
+
+####################
+# macOS
+#
+
+.DS_Store
+.DS_Store?
+.Trashes
+.Spotlight-V100
+*.swp
+profile
