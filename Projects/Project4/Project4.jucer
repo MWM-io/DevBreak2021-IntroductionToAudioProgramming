@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<JUCERPROJECT id="bGY2AV" name="Project4" projectType="guiapp" useAppConfig="0"
+              addUsingNamespaceToJuceHeader="0" displaySplashScreen="1" jucerFormatVersion="1">
+  <MAINGROUP id="DswMh1" name="Project4">
+    <GROUP id="{49458355-67FC-870F-4BE5-97BB988A36E2}" name="Source">
+      <FILE id="KczVZ0" name="Main.cpp" compile="1" resource="0" file="Source/Main.cpp"/>
+      <FILE id="dItYEa" name="MainComponent.h" compile="0" resource="0" file="Source/MainComponent.h"/>
+      <FILE id="GulqQT" name="MainComponent.cpp" compile="1" resource="0"
+            file="Source/MainComponent.cpp"/>
+      <FILE id="ndJGqC" name="MainScreen.h" compile="0" resource="0" file="Source/MainScreen.h"/>
+      <FILE id="WvMcBf" name="MainScreen.cpp" compile="1" resource="0" file="Source/MainScreen.cpp"/>
+      <FILE id="wMwMet" name="AudioEngine.h" compile="0" resource="0" file="Source/AudioEngine.h"/>
+      <FILE id="yy4CJ4" name="AudioEngine.cpp" compile="1" resource="0" file="Source/AudioEngine.cpp"/>
+    </GROUP>
+    <GROUP id="{7B9EC7BD-B5CA-62D5-8F44-9869D45F615B}" name="DSP">
+      <GROUP id="{0E495265-FCA2-DA0B-C844-15B9836F0669}" name="Gain">
+        <FILE id="C0A9Kj" name="SmoothedGain.h" compile="0" resource="0" file="../Commons/DSP/Gain/SmoothedGain.h"/>
+        <FILE id="ATI3pL" name="SmoothedGain.cpp" compile="1" resource="0"
+              file="../Commons/DSP/Gain/SmoothedGain.cpp"/>
+      </GROUP>
+      <GROUP id="{7F93C46C-3A95-4C34-B6DA-5FD67D4F6D7E}" name="SineWaveGenerator">
+        <FILE id="VLMEmC" name="SineWaveGenerator.h" compile="0" resource="0"
+              file="../Commons/DSP/SineWaveGenerator/SineWaveGenerator.h"/>
+        <FILE id="Cq9y2T" name="SineWaveGenerator.cpp" compile="1" resource="0"
+              file="../Commons/DSP/SineWaveGenerator/SineWaveGenerator.cpp"/>
+      </GROUP>
+      <GROUP id="{1757906D-4760-BD08-0A16-C5E64BFDA1EB}" name="RingModulator">
+        <FILE id="EA7s88" name="RingModulator.h" compile="0" resource="0" file="../Commons/DSP/RingModulator/RingModulator.h"/>
+        <FILE id="JGNeFp" name="RingModulator.cpp" compile="1" resource="0"
+              file="../Commons/DSP/RingModulator/RingModulator.cpp"/>
+      </GROUP>
+      <GROUP id="{7725346A-D8AB-737F-53A1-4EDBFA05CB05}" name="Utility">
+        <FILE id="fqcT0B" name="SmoothedValue.h" compile="0" resource="0" file="../Commons/DSP/Utility/SmoothedValue.h"/>
+        <FILE id="Em76zS" name="SmoothedValue.cpp" compile="1" resource="0"
+              file="../Commons/DSP/Utility/SmoothedValue.cpp"/>
+      </GROUP>
+    </GROUP>
+  </MAINGROUP>
+  <JUCEOPTIONS JUCE_STRICT_REFCOUNTEDPOINTER="1"/>
+  <EXPORTFORMATS>
+    <XCODE_MAC targetFolder="Builds/MacOSX" microphonePermissionNeeded="1">
+      <CONFIGURATIONS>
+        <CONFIGURATION isDebug="1" name="Debug"/>
+        <CONFIGURATION isDebug="0" name="Release"/>
+      </CONFIGURATIONS>
+      <MODULEPATHS>
+        <MODULEPATH id="juce_audio_basics"/>
+        <MODULEPATH id="juce_audio_devices"/>
+        <MODULEPATH id="juce_audio_formats"/>
+        <MODULEPATH id="juce_audio_processors"/>
+        <MODULEPATH id="juce_audio_utils"/>
+        <MODULEPATH id="juce_core"/>
+        <MODULEPATH id="juce_data_structures"/>
+        <MODULEPATH id="juce_events"/>
+        <MODULEPATH id="juce_graphics"/>
+        <MODULEPATH id="juce_gui_basics"/>
+        <MODULEPATH id="juce_gui_extra"/>
+        <MODULEPATH id="juce_opengl" path="../../../../../JUCE/modules"/>
+      </MODULEPATHS>
+    </XCODE_MAC>
+    <XCODE_IPHONE targetFolder="Builds/iOS" iosScreenOrientation="UIInterfaceOrientationLandscapeLeft,UIInterfaceOrientationLandscapeRight"
+                  microphonePermissionNeeded="1" iosDevelopmentTeamID="TEAMID">
+      <CONFIGURATIONS>
+        <CONFIGURATION isDebug="1" name="Debug"/>
+        <CONFIGURATION isDebug="0" name="Release"/>
+      </CONFIGURATIONS>
+      <MODULEPATHS>
+        <MODULEPATH id="juce_gui_extra"/>
+        <MODULEPATH id="juce_gui_basics"/>
+        <MODULEPATH id="juce_graphics"/>
+        <MODULEPATH id="juce_events"/>
+        <MODULEPATH id="juce_data_structures"/>
+        <MODULEPATH id="juce_core"/>
+        <MODULEPATH id="juce_audio_utils"/>
+        <MODULEPATH id="juce_audio_processors"/>
+        <MODULEPATH id="juce_audio_formats"/>
+        <MODULEPATH id="juce_audio_devices"/>
+        <MODULEPATH id="juce_audio_basics"/>
+        <MODULEPATH id="juce_opengl" path="../../../../../JUCE/modules"/>
+      </MODULEPATHS>
+    </XCODE_IPHONE>
+    <ANDROIDSTUDIO targetFolder="Builds/Android" microphonePermissionNeeded="1"
+                   androidScreenOrientation="landscape">
+      <CONFIGURATIONS>
+        <CONFIGURATION isDebug="1" name="Debug"/>
+        <CONFIGURATION isDebug="0" name="Release"/>
+      </CONFIGURATIONS>
+      <MODULEPATHS>
+        <MODULEPATH id="juce_gui_extra"/>
+        <MODULEPATH id="juce_gui_basics"/>
+        <MODULEPATH id="juce_graphics"/>
+        <MODULEPATH id="juce_events"/>
+        <MODULEPATH id="juce_data_structures"/>
+        <MODULEPATH id="juce_core"/>
+        <MODULEPATH id="juce_audio_utils"/>
+        <MODULEPATH id="juce_audio_processors"/>
+        <MODULEPATH id="juce_audio_formats"/>
+        <MODULEPATH id="juce_audio_devices"/>
+        <MODULEPATH id="juce_audio_basics"/>
+        <MODULEPATH id="juce_opengl" path="../../../../../JUCE/modules"/>
+      </MODULEPATHS>
+    </ANDROIDSTUDIO>
+    <VS2019 targetFolder="Builds/VisualStudio2019">
+      <CONFIGURATIONS>
+        <CONFIGURATION isDebug="1" name="Debug"/>
+        <CONFIGURATION isDebug="0" name="Release"/>
+      </CONFIGURATIONS>
+      <MODULEPATHS>
+        <MODULEPATH id="juce_audio_basics"/>
+        <MODULEPATH id="juce_audio_devices"/>
+        <MODULEPATH id="juce_audio_formats"/>
+        <MODULEPATH id="juce_audio_processors"/>
+        <MODULEPATH id="juce_audio_utils"/>
+        <MODULEPATH id="juce_core"/>
+        <MODULEPATH id="juce_data_structures"/>
+        <MODULEPATH id="juce_events"/>
+        <MODULEPATH id="juce_graphics"/>
+        <MODULEPATH id="juce_gui_basics"/>
+        <MODULEPATH id="juce_gui_extra"/>
+        <MODULEPATH id="juce_opengl" path="../../../../../JUCE/modules"/>
+      </MODULEPATHS>
+    </VS2019>
+    <VS2017 targetFolder="Builds/VisualStudio2017">
+      <CONFIGURATIONS>
+        <CONFIGURATION isDebug="1" name="Debug"/>
+        <CONFIGURATION isDebug="0" name="Release"/>
+      </CONFIGURATIONS>
+      <MODULEPATHS>
+        <MODULEPATH id="juce_opengl"/>
+        <MODULEPATH id="juce_gui_extra"/>
+        <MODULEPATH id="juce_gui_basics"/>
+        <MODULEPATH id="juce_graphics"/>
+        <MODULEPATH id="juce_events"/>
+        <MODULEPATH id="juce_data_structures"/>
+        <MODULEPATH id="juce_core"/>
+        <MODULEPATH id="juce_audio_utils"/>
+        <MODULEPATH id="juce_audio_processors"/>
+        <MODULEPATH id="juce_audio_formats"/>
+        <MODULEPATH id="juce_audio_devices"/>
+        <MODULEPATH id="juce_audio_basics"/>
+      </MODULEPATHS>
+    </VS2017>
+    <VS2015 targetFolder="Builds/VisualStudio2015">
+      <CONFIGURATIONS>
+        <CONFIGURATION isDebug="1" name="Debug"/>
+        <CONFIGURATION isDebug="0" name="Release"/>
+      </CONFIGURATIONS>
+      <MODULEPATHS>
+        <MODULEPATH id="juce_opengl"/>
+        <MODULEPATH id="juce_gui_extra"/>
+        <MODULEPATH id="juce_gui_basics"/>
+        <MODULEPATH id="juce_graphics"/>
+        <MODULEPATH id="juce_events"/>
+        <MODULEPATH id="juce_data_structures"/>
+        <MODULEPATH id="juce_core"/>
+        <MODULEPATH id="juce_audio_utils"/>
+        <MODULEPATH id="juce_audio_processors"/>
+        <MODULEPATH id="juce_audio_formats"/>
+        <MODULEPATH id="juce_audio_devices"/>
+        <MODULEPATH id="juce_audio_basics"/>
+      </MODULEPATHS>
+    </VS2015>
+  </EXPORTFORMATS>
+  <MODULES>
+    <MODULE id="juce_audio_basics" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_audio_devices" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_audio_formats" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_audio_processors" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_audio_utils" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_core" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_data_structures" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_events" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_graphics" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_gui_basics" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_gui_extra" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_opengl" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+  </MODULES>
+  <LIVE_SETTINGS>
+    <OSX/>
+  </LIVE_SETTINGS>
+</JUCERPROJECT>
